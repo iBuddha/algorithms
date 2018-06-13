@@ -13,7 +13,7 @@ public class Ex15_ThreeSum {
         if (a == null)
             return;
         //lastIK为上一次j = i + 1时 所有a[i] + a[j] + a[k] > 0时候最小的k。记录它使得不必每次给j赋值以后将k重置到length-1，而是使得k成为一个始终
-        //递减的值。使得算法的复杂度低于O(n^2)
+        //递减的值。使得算法复杂度的上界低于O(n^2)
         int lastIK = a.length - 1;
 
         int cnt = 0;
